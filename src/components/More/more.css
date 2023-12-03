@@ -1,0 +1,70 @@
+.more-container{
+    background-color: #1c1c1c;
+    padding: 2.5rem 2.5rem 0rem 2.5rem;
+}
+
+.more-heading{
+    font-size: 2.2rem;
+    font-family: poppins;
+    color: white;
+}
+
+.more-desc{
+    font-size: 1.2rem;
+    font-family: poppins;
+    color: #918f8e;
+    font-weight: 500;
+}
+
+
+/* More feature card */
+
+.more-feature-card{
+    border: 1px solid rgb(190, 132, 132);
+    border-radius: 10px;
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    margin: 1rem;
+    border: 2px solid orange;
+    background-color: #212121;
+}
+.more-feature-img img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.more-feature-desc{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fdf2ec;
+}
+
+/* integrations */
+
+.integrations{
+    margin-top: 6rem;
+    padding-top: 10rem;
+    border: 2px solid yellow;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.integration-heading{
+    font-size: 2.2rem;
+    font-family: poppins;
+    color: #fdf2ec;
+    font-weight: 600;
+
+}
+
+.integration-para{
+    margin: 1rem 0rem 2rem 0rem;
+    font-size: 1.2rem;
+    font-family: poppins;
+    color: #918f8e;
+    text-align: center;
+    font-weight: 500;
+}
+
+.connect-image img{
+    width: 70%;
+}

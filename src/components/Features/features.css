@@ -1,0 +1,73 @@
+.feature-container{
+    border: 2px solid pink;
+}
+
+.features{
+    width: 85%;
+    border: 2px solid red;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 2rem;
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features-heading{
+    font-size: 2.2rem;
+    font-family: poppins;
+}
+
+.features-para{
+    font-size: 1.2rem;
+    font-family: poppins;
+    color: #918f8e;
+    text-align: center;
+    font-weight: 500;
+}
+
+.productivity{
+    background-color: #ededfa;
+    border: 2px solid #8850ff;
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 2.8rem;
+    padding-top: 4rem;
+    border-radius: 15px;
+    text-align: left;
+}
+
+/*
+    Feature Card
+*/
+.feature-card{
+    border: 1px solid rgb(213, 211, 211);
+    border-radius: 10px;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+    margin: 1rem;
+}
+.desc{
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+.desc h2{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.desc p{
+    margin-top: 0;
+    font-family: poppins;
+    color: #858483;
+    font-weight: 500;
+}
+.task img{
+    width: 490px;
+    height: 215px;
+}
+.task{
+    width: 10rem;
+}

@@ -1,0 +1,31 @@
+/* Testimonial.css */
+
+.testimonial-carousel {
+    overflow: hidden;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    animation: testimonial-animation 20s linear; /* Adjust duration as needed */
+  }
+  
+  .testimonial-card {
+    width: 300px; /* Adjust card width */
+    padding: 20px;
+    margin: 0 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+    flex-shrink: 0; /* Ensure items don't shrink */
+  }
+  
+  /* Keyframes for the animation */
+  @keyframes testimonial-animation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% * 4)); /* Adjust the multiplier based on the number of testimonials */
+    }
+  }
+  
