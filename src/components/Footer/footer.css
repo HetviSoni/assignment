@@ -1,0 +1,8 @@
+.footer__container div{
+    display: flex;
+    justify-content: space-between;
+}
+.footer{
+    padding: 3rem;
+    border: 2px solid brown;
+}

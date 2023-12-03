@@ -4,6 +4,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Try from '../Try/Try';
 
 const TestimonialSection = () => {
     // Sample testimonial data
@@ -57,58 +58,60 @@ const TestimonialSection = () => {
                 {/* Render TestimonialCarousel component */}
                 <TestimonialCarousel testimonials={testimonials} />
             </div>
+            <Try />
         </div>
     );
 };
 
 const TestimonialCarousel = ({ testimonials }) => {
     const settings = {
-      dots: false,
-      infinite: true,
-      speed: 1000, // Adjust the speed for smoothness
-      slidesToShow: 4, // Number of cards visible initially
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 4000, // Time for each slide
-      cssEase: 'linear', // For smoother sliding effect
-      rtl: true,
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-          }
-        }
-      ]
+        dots: false,
+        infinite: true,
+        speed: 5000, 
+        slidesToShow: 4, 
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 950, 
+        cssEase: 'linear', 
+        rtl: true, 
+
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     };
-  
+
     return (
-      <Slider {...settings}>
-        {testimonials.map((testimonial, index) => (
-          <div key={index}>
-            <Testimonial
-              review={testimonial.review}
-              name={testimonial.name}
-              designation={testimonial.designation}
-              profilePic={testimonial.profilePic}
-            />
-          </div>
-        ))}
-      </Slider>
+        <Slider {...settings}>
+            {testimonials.map((testimonial, index) => (
+                <div key={index}>
+                    <Testimonial
+                        review={testimonial.review}
+                        name={testimonial.name}
+                        designation={testimonial.designation}
+                        profilePic={testimonial.profilePic}
+                    />
+                </div>
+            ))}
+        </Slider>
     );
-  };
+};
 
 const Testimonial = ({ review, name, designation, profilePic }) => {
     return (
