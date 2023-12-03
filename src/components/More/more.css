@@ -16,20 +16,16 @@
     font-weight: 500;
 }
 
-
-/* More feature card */
-
 .more-feature-card{
-    border: 1px solid rgb(190, 132, 132);
     border-radius: 10px;
     padding: 2.5rem 1.5rem 1.5rem 1.5rem;
     margin: 1rem;
-    border: 2px solid orange;
     background-color: #212121;
 }
 .more-feature-img img{
     width: 2rem;
     height: 2rem;
+    margin: auto;
 }
 
 .more-feature-desc{
@@ -43,7 +39,6 @@
 .integrations{
     margin-top: 6rem;
     padding-top: 10rem;
-    border: 2px solid yellow;
     width: 70%;
     margin: auto;
     text-align: center;
@@ -67,4 +62,29 @@
 
 .connect-image img{
     width: 70%;
+}
+
+.more-feature-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    margin: auto;
+    color: #fdf2ec;
+    padding: 0.7rem;
+    background-color: #8850ff;
+    border-radius: 9px;
+    
+}
+
+@media (max-width: 768px) {
+    .more-heading{
+        font-size: 1.7rem;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    .integrations{
+        width: 95%;
+    }
+    
 }

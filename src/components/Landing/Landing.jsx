@@ -8,14 +8,14 @@ const Landing = () => {
 
             <div className="landing">
                 <div className="welcome">
-                    <botton className="welcome-button">    
-                        WELCOME TO MANAGE WISE!
+                    <botton className="welcome-button">
+                        👋WELCOME TO MANAGE WISE!
                     </botton>
                 </div>
                 <div>
                     <h1 className="landing-heading">
                         Empower your business with <br></br>
-                        Strategic insights
+                        <span style={{ color: '#fe8162' }}>Strategic</span> insights
                     </h1>
                 </div>
                 <div>
@@ -25,10 +25,11 @@ const Landing = () => {
                     </p>
                 </div>
                 <div className="landing-buttons">
-                    <button className="button1">Get Started</button>
-                    <button className="button2">Watch Demo</button>
+                    <button className="button1">Get Started <i class="fa-solid fa-arrow-right landing-page-arrow"/></button>
+                    
+                    <button id="button2">Watch Demo</button>
                 </div>
-                <div>
+                <div className="landing-img-container">
                     <img src={LandingImage} alt="Landing" className="landing-image" />
                 </div>
 

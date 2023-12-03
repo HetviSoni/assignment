@@ -1,4 +1,3 @@
-/* Testimonial.css */
 
 .testimonial-carousel {
     overflow: hidden;
@@ -6,26 +5,50 @@
   
   .testimonial-container {
     display: flex;
-    animation: testimonial-animation 20s linear; /* Adjust duration as needed */
+    animation: testimonial-animation 20s linear; 
   }
   
-  .testimonial-card {
-    width: 300px; /* Adjust card width */
-    padding: 20px;
-    margin: 0 10px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    text-align: center;
-    flex-shrink: 0; /* Ensure items don't shrink */
-  }
-  
-  /* Keyframes for the animation */
+
+.testimonial-card {
+  width: 90%;
+  height: 200px;
+  display: flex;
+  padding: 3rem;
+  margin: 3rem;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px; 
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author-img {
+  margin-right: 10px; 
+}
+
+.author-img img {
+  width: 45px; 
+  height: 45px; 
+  border-radius: 50%; 
+}
+
+
   @keyframes testimonial-animation {
     0% {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-100% * 4)); /* Adjust the multiplier based on the number of testimonials */
+      transform: translateX(calc(-100% * 4)); 
     }
   }
   

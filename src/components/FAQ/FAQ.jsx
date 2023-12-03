@@ -24,14 +24,17 @@ const FAQ = () => {
         { question: 'Can I access Manage Wise from different devices and platforms', answer: 'Yes, Manage Wise offers cross-platform compatibility, allowing you to access and use the platform seamlessly on desktops, web browsers, and mobile devices' },
         { question: 'What kind of support options do you offer to users?', answer: ' We provide responsive customer support via chat and email to assist you with any inquiries, issues, or guidance you may need while using Manage Wise.' },
         { question: 'How secure is the data stored within Manage Wise?', answer: 'Your data\'s security is a top priority. Manage Wise employs robust data encryption and follows industry best practices to ensure your sensitive information is safe and protected.' },
-        // Add more FAQ items as needed
     ];
     return (
         <div className='faq-container'>
             <div className='faq-header'>
-                <div> FAQ </div>
+                <div> 
+                    <button className="welcome-button">
+                    🙋‍♀️ FAQ
+                    </button>
+                </div>
                 <div className='faq-heading'>
-                    Need <br></br> Answers
+                    Need <br></br> <span style={{ color: '#fe8162' }}>Answers</span> 
                 </div>
                 <p className='faq-para'>
                     Check out our most commonly asked questions below to <br></br>

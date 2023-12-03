@@ -12,12 +12,12 @@ const Features = () => {
             <div className="features">
                 <div className="welcome">
                     <botton className="welcome-button">
-                        PREMIER FEATURES
+                        🔥PREMIER FEATURES
                     </botton>
                 </div>
                 <div>
                     <h1 className="features-heading">
-                        Discover our product's Capabilities
+                        Discover our product's <span style={{ color: '#fe8162' }}>Capabilities</span>
                     </h1>
                 </div>
                 <div>
@@ -27,6 +27,7 @@ const Features = () => {
                     </p>
                 </div>
                 <div className="productivity">
+                    ⭐️ <br></br>
                     Boost productivity and <br></br>
                     streamline workflow with<br></br>
                     us. Enjoy our intuitive<br></br>

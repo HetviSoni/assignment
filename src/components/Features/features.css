@@ -1,10 +1,5 @@
-.feature-container{
-    border: 2px solid pink;
-}
-
 .features{
     width: 85%;
-    border: 2px solid red;
     margin: auto;
     margin-top: 3rem;
     padding: 2rem;
@@ -30,7 +25,6 @@
 
 .productivity{
     background-color: #ededfa;
-    border: 2px solid #8850ff;
     font-size: 2.2rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -70,4 +64,24 @@
 }
 .task{
     width: 10rem;
+}
+
+@media (max-width: 768px) {
+    .productivity{
+        font-size: 1.5rem;
+        
+    }
+    .feature-card{
+        width: 90%;
+    }
+    
+    .feature-img img{
+        padding: 0;
+        width: 99%;
+        height: 99%;
+    }
+    .task img{
+        width: 380px;
+        height: 150px;
+    }
 }

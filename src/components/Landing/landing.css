@@ -1,10 +1,9 @@
 .landing-container{
-    border: 2px solid yellow;
+    background-color:linear-gradient(#fdf3ed, white);
 }
 
 .landing{
     width: 85%;
-    border: 2px solid red;
     margin: auto;
     margin-top: 3rem;
     padding: 2rem;
@@ -16,7 +15,6 @@
 }
 
 .welcome-button{
-    /* font-family: 'Poppins', sans-serif; */
     font-family: 'Montserrat', sans-serif;
     border: 1px solid grey;
     padding: 5px 10px;
@@ -24,17 +22,18 @@
     font-size: small;
     font-weight: bolder;
     color: #8850ff;
+    background-color: #ffffff;
 }
 
 .landing-heading{
     font-size: 4.5rem;
-    margin-top: 0;
-    border: 2px solid green;    
+    margin-top: 10px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;    
     color: #1c1c1c;
     line-height: 1.1;
+    margin-bottom: 19px;
 
 }
 
@@ -42,8 +41,7 @@
     color: #918f8e;     
     font-size: 1.2em; 
     text-align: center;
-    font-weight: 500;
-    
+    font-weight:500;   
 }
 
 .landing-buttons button{
@@ -59,17 +57,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.landing div{
-    border: 2px solid brown;
-}
 
-.button1{
-    background-color: #8850ff;
-    color: #ffffff;
-}
 
-.button2{
+#button2{
     background-color: #ffffff;
+    border: 1px solid grey;
 }
 
 .landing-image{
@@ -77,4 +69,45 @@
     height: 60%;
     margin-left: 20%;
 
+}
+.button1 {
+    background-color: #8850ff;
+    color: white;
+    border: none;
+    position: relative;
+    transition: box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button1:hover {
+    box-shadow: 3px 3px 3px  #8850ff;
+}
+
+.button1 .landing-page-arrow {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button1:hover .landing-page-arrow {
+    display: inline-block;
+    opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+    .landing-buttons{
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .landing-buttons button{
+        width: 100%;
+    }
+    .landing-image{
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+    
+    }
+   
 }

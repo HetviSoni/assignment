@@ -1,11 +1,12 @@
 import './footer.css';
+import Logo from '../../assets/logo.webp';
 const Footer = ()=>{
     return(
         <footer className="footer">
             <div className="footer__container">
                 <div>
                     <div className="footer-logo-container">
-                        Logo
+                        <img src={Logo} alt="Logo" className="footer-logo" /> ManageWise
                     </div>
                     <div className="footer-nav">
                         <ul>

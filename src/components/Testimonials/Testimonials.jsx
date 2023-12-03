@@ -5,6 +5,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Try from '../Try/Try';
+import Emily from '../../assets/emily.webp';
+import Alex from '../../assets/alex.webp';
+import David from '../../assets/david.webp';
 
 const TestimonialSection = () => {
     // Sample testimonial data
@@ -13,19 +16,19 @@ const TestimonialSection = () => {
             review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             name: "John Doe",
             designation: "CEO, Company A",
-            profilePic: Logo // Assuming Logo is imported correctly
+            profilePic: Emily // Assuming Logo is imported correctly
         },
         {
             review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             name: "John Doe",
             designation: "CEO, Company A",
-            profilePic: Logo // Assuming Logo is imported correctly
+            profilePic: Alex // Assuming Logo is imported correctly
         },
         {
             review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             name: "John Doe",
             designation: "CEO, Company A",
-            profilePic: Logo // Assuming Logo is imported correctly
+            profilePic: David // Assuming Logo is imported correctly
         },
         {
             review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -45,9 +48,11 @@ const TestimonialSection = () => {
     return (
         <div className='faq-container'>
             <div className='faq-header'>
-                <div> TESTIMONIALS </div>
+                <div> 
+                    <button className='welcome-button'>🧡TESTIMONIALS</button>
+                 </div>
                 <div className='faq-heading'>
-                    Hear from our Satisfied clients
+                    Hear from our <span style={{ color: '#fe8162' }}>Satisfied</span>  clients
                 </div>
                 <p className='faq-para'>
                     Discover why our clients love working with us. Read their<br></br>
@@ -116,12 +121,18 @@ const TestimonialCarousel = ({ testimonials }) => {
 const Testimonial = ({ review, name, designation, profilePic }) => {
     return (
         <div className="testimonial-card">
-            <img src={profilePic} alt={`${name}'s profile`} className="profile-pic" />
-            <div className="content">
-                <p className="review">{review}</p>
-                <p className="name">{name}</p>
-                <p className="designation">{designation}</p>
+            <div className='review'>
+                {review}
             </div>
+            <div className='author'>
+                <div className='author-img'>
+                    <img src={profilePic} alt="Author" />
+                </div>
+                <div className='author-name'>
+                    {name} <br></br>
+                    {designation}
+                </div>
+            </div>            
         </div>
     );
 };

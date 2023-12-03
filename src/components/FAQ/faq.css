@@ -1,9 +1,6 @@
 .faq-container {
-    /* width: 100%; */
-    border: 2px solid blue;
     margin-top: 3rem;
     padding: 4rem;
-    /* Add other styles */
 }
 
 .faq-heading {
@@ -16,7 +13,6 @@
     font-size: 1.2rem;
     font-family: poppins;
     color: #918f8e;
-    /* text-align: center; */
     font-weight: 500;
 }
 
@@ -55,12 +51,13 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+    color: #918f8e;
+    font-family: poppins;
 }
 
 .answer.active {
-    max-height: 4rem;
+    max-height: 4rem;  
     padding: 10px;
-    color: #918f8e;
-    font-family: poppins;
+
 }
 

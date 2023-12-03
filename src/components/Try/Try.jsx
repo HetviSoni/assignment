@@ -20,11 +20,12 @@ const Try = () => {
                     </p>
                 </div>
                 <div>
-                    <button> Try out now</button>
+                    <button className='try'> Try out now</button>
                 </div>
 
-                <div>
-                    200+ Happy users
+                <div className='happy-user'>
+                <span style={{ color: '#8850ff' }}>200+</span> 
+                     Happy users
                 </div>
                 <img src="https://framerusercontent.com/images/S4kVG1FFzSqxr8zOqpvJRfsBad0.png?scale-down-to=512" alt='Try'></img>
 
