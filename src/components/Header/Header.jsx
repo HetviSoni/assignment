@@ -3,7 +3,7 @@ import './header.css';
 import { useState } from 'react';
 import Logo from '../../assets/logo.webp';
 
-const Header = () => {
+const Header = ({ scrollToSection }) => {
     const [showMenu, setShowMenu] = useState(false);
 
     const toggleMenu = () => {
@@ -22,10 +22,10 @@ const Header = () => {
                 </div>
                 <div className={`right ${showMenu ? 'show' : ''}`}>
                     <ul>
-                        <li><a href="#features" onClick={closeMenu}>Features</a></li>
-                        <li><a href="#faq" onClick={closeMenu}>FAQ</a></li>
-                        <li><a href="#pricing" onClick={closeMenu}>Pricing</a></li>
-                        <li><a href="#testimonials" onClick={closeMenu}>Testimonials</a></li>
+                        <li><a href="#features" onClick={() => scrollToSection('feature')}>Features</a></li>
+                        <li><a href="#faq" onClick={() => scrollToSection('faq')}>FAQ</a></li>
+                        <li><a href="#pricing" onClick={() => scrollToSection('pricing')}>Pricing</a></li>
+                        <li><a href="#testimonials" onClick={() => scrollToSection('testimonials')}>Testimonials</a></li>
                         <li><button id='buy' onClick={closeMenu}>Buy Template</button></li>
                     </ul>
                 </div>

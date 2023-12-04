@@ -7,8 +7,7 @@ import Analytics from '../../assets/analytics.webp';
 
 const Features = () => {
     return (
-        <div className="features-container">
-
+        <div className="features-container" id="feature">
             <div className="features">
                 <div className="welcome">
                     <botton className="welcome-button">

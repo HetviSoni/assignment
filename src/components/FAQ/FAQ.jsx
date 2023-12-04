@@ -26,7 +26,7 @@ const FAQ = () => {
         { question: 'How secure is the data stored within Manage Wise?', answer: 'Your data\'s security is a top priority. Manage Wise employs robust data encryption and follows industry best practices to ensure your sensitive information is safe and protected.' },
     ];
     return (
-        <div className='faq-container'>
+        <div className='faq-container' id='faq'>
             <div className='faq-header'>
                 <div> 
                     <button className="welcome-button">

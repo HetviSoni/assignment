@@ -1,6 +1,7 @@
 .faq-container {
     margin-top: 3rem;
     padding: 4rem;
+    scroll-behavior: smooth
 }
 
 .faq-heading {

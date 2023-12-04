@@ -10,43 +10,43 @@ import Alex from '../../assets/alex.webp';
 import David from '../../assets/david.webp';
 
 const TestimonialSection = () => {
-    // Sample testimonial data
+   
     const testimonials = [
         {
             review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             name: "John Doe",
             designation: "CEO, Company A",
-            profilePic: Emily // Assuming Logo is imported correctly
+            profilePic: Emily 
         },
         {
             review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             name: "John Doe",
             designation: "CEO, Company A",
-            profilePic: Alex // Assuming Logo is imported correctly
+            profilePic: Alex 
         },
         {
             review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             name: "John Doe",
             designation: "CEO, Company A",
-            profilePic: David // Assuming Logo is imported correctly
+            profilePic: David 
         },
         {
             review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             name: "John Doe",
             designation: "CEO, Company A",
-            profilePic: Logo // Assuming Logo is imported correctly
+            profilePic: Logo 
         },
         {
             review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             name: "John Doe",
             designation: "CEO, Company A",
-            profilePic: Logo // Assuming Logo is imported correctly
+            profilePic: Logo 
         },
-        // Add more testimonials as needed
+        
     ];
 
     return (
-        <div className='faq-container'>
+        <div className='faq-container' id='testimonials'>
             <div className='faq-header'>
                 <div> 
                     <button className='welcome-button'>🧡TESTIMONIALS</button>
@@ -60,7 +60,6 @@ const TestimonialSection = () => {
                 </p>
             </div>
             <div className="testimonial-carousel">
-                {/* Render TestimonialCarousel component */}
                 <TestimonialCarousel testimonials={testimonials} />
             </div>
             <Try />

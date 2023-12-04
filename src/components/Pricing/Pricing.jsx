@@ -2,7 +2,7 @@ import './pricing.css';
 
 const Pricing = () => {
     return (
-        <div className="features-container">
+        <div className="features-container" id='pricing'>
 
             <div className="features">
                 <div className="welcome">
